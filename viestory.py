@@ -34,7 +34,7 @@ ir tomar um banho para acordar ou sair do galpão, por favor \n\
         print("a agua tinha muita radiação, voce morreu")
         perdeu()
     else:
-        segunda_escolha
+        segunda_escolha()
 
     return primeira_escolha
 
@@ -68,6 +68,7 @@ voce sai do galpão ainda com o corpo mole, seus olhos ardem com a claridade ent
     2. continuar andando \n"))
 
     if (segunda_escolha == 2):
+        print("com a radiação no seu corpo e sem um destino certo, voce morreu")
         perdeu()
     else:
         terceira_escolha()
@@ -182,10 +183,6 @@ def vence_jogo():
     else:
         print("Fim de jogo!")
     return vence
-
-
-
-
 
 
 def perdeu():
